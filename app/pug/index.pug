@@ -14,8 +14,21 @@ html
 
         title Ano Bayan!
     body
-        h1.title Ano Bayan
-        div a-no baj-j&aelig;n
+        .banner
+            h1.title Ano Bayan
+        .initial-content
+            .page-summary 
+                .phonetic /a-no baj-j&aelig;n/
+                | Translated from tagalog (the official language of the Philippines) to english,
+                | it means, "what is that?" Which is hopefully a question
+                | this website can answer. Enter or word or upload an image to see what the content in image
+                | is when translated to tagalog!
+            form
+                .image-search
+                .or-statement
+                    | --------- OR ---------
+                .text-search
+                    input(type="text")
 
         //build:js js/main.min.js
         script(src="js/custom.js")
