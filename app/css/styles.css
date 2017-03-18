@@ -1,7 +1,53 @@
 body {
-  margin: 0px;
+  margin-left: 5vw;
+  margin-rights: 5vw;
   color: white;
-  background-color: #222222; }
+  background-color: #222222;
+  font-family: 'Istok Web';
+  font-size: 125%; }
+  @media screen and (max-width: 350px) {
+    body {
+      font-size: 18px; } }
 
-.title {
-  font-family: Helvetica; }
+.banner {
+  margin: 3vw 0px 0px 5vw; }
+  .banner .title {
+    margin: 0px;
+    font-family: 'Crimson Text', serif;
+    font-size: 300%; }
+  @media screen and (max-width: 350px) {
+    .banner {
+      font-size: 5.5vw; } }
+
+.initial-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .initial-content .page-summary {
+    margin-left: 10vw;
+    margin-bottom: 50px;
+    width: 40vw;
+    max-width: 400px;
+    min-width: 225px; }
+    .initial-content .page-summary .phonetic {
+      font-weight: 600; }
+  .initial-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-right: 5vw;
+    margin-left: 5vw; }
+    .initial-content form .image-search {
+      height: 250px;
+      width: 250px;
+      border-radius: 10px;
+      border: 3px solid crimson;
+      background-color: white; }
+    .initial-content form .or-statement {
+      display: flex;
+      margin: 10px 0px 10px; }
+
+.clearfix {
+  overflow: auto; }
